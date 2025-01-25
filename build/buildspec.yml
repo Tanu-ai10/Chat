@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies (if any)"
+      # Add commands to install tools like Node.js or any dependencies if required
+      - echo "No dependencies to install for a static HTML/CSS/JS project"
+  pre_build:
+    commands:
+      - echo "Running pre-build validation"
+      # You can add any custom linting or static analysis tools here if required
+      - echo "No validation steps needed for a simple static website"
+  build:
+    commands:
+      - echo "Building the project"
+      - mkdir -p build
+      - cp -R * build/
+      - echo "Project built successfully"
+  post_build:
+    commands:
+      - echo "Post-build steps"
+      - echo "Build completed on `date`"
+
