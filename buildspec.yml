@@ -23,5 +23,10 @@ phases:
     commands:
       - echo "Post-build steps"
       - echo "Build completed on `date`"
+  
+  artifacts:
+    files:
+      - /**/*
+    name: DevOpsArtifacts
 
 
