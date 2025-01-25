@@ -15,12 +15,12 @@ phases:
     commands:
       build:
   commands:
+    build:
+  commands:
     - echo "Building the Coffee Shop Chatbot"
     - mkdir -p build
-    - ls -la # Check the directory structure
-    - chmod -R 755 . 
-    - cp -R ./* build/
-    - echo "Coffee Shop Chatbot built successfully"
+    - echo "Skipping copy for debug purposes"
+
 
   post_build:
     commands:
