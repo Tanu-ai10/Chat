@@ -17,7 +17,7 @@ phases:
     commands:
       - echo "Building the Coffee Shop Chatbot"
       - mkdir -p build
-      - cp -R ./* build/  # Copy project files to the build directory
+      - echo "Skipping copy for debug purposes"
       
   post_build:
     commands:
