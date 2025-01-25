@@ -13,10 +13,15 @@ phases:
       - echo "No validation steps needed for a simple static website"
   build:
     commands:
-      - echo "Building the project"
-      - mkdir -p build
-      - cp -R * build/
-      - echo "Project built successfully"
+      build:
+  commands:
+    - echo "Building the Coffee Shop Chatbot"
+    - mkdir -p build
+    - ls -la # Check the directory structure
+    - chmod -R 755 . 
+    - cp -R ./* build/
+    - echo "Coffee Shop Chatbot built successfully"
+
   post_build:
     commands:
       - echo "Post-build steps"
