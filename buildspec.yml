@@ -17,15 +17,13 @@ phases:
     commands:
       - echo "Building the Coffee Shop Chatbot"
       - mkdir -p build
-      - echo "Skipping copy for debug purposes"
+      - cp -R ./* build/  # Copy project files to the build directory
       
   post_build:
     commands:
       - echo "Post-build steps"
       - echo "Build completed on `date`"
-      
-  artifacts:
+
+artifacts:
   files:
     - build/**/*
-
-
