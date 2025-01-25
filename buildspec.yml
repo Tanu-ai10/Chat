@@ -22,8 +22,3 @@ phases:
       - echo "Post-build steps"
       - echo "Build completed on `date`"
 
-artifacts:
-  files:
-    - build/**/* # Include everything in the `build/` folder
-
-  discard-paths: yes # Flatten the directory structure if needed
