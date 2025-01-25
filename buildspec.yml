@@ -6,24 +6,22 @@ phases:
       - echo "Installing dependencies (if any)"
       # Add commands to install tools like Node.js or any dependencies if required
       - echo "No dependencies to install for a static HTML/CSS/JS project"
+      
   pre_build:
     commands:
       - echo "Running pre-build validation"
       # You can add any custom linting or static analysis tools here if required
       - echo "No validation steps needed for a simple static website"
+      
   build:
     commands:
-      build:
-  commands:
-    build:
-  commands:
-    - echo "Building the Coffee Shop Chatbot"
-    - mkdir -p build
-    - echo "Skipping copy for debug purposes"
-
-
+      - echo "Building the Coffee Shop Chatbot"
+      - mkdir -p build
+      - echo "Skipping copy for debug purposes"
+      
   post_build:
     commands:
       - echo "Post-build steps"
       - echo "Build completed on `date`"
+
 
